@@ -1,0 +1,212 @@
+/* Reset */
+.nav,
+.nav a,
+.nav ul,
+.nav li,
+.nav div,
+.nav form,
+.nav input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.nav a { text-decoration: none; }
+
+.nav li { list-style: none; }
+
+/* Menu Container */
+.nav {
+	display: inline-block;
+	position: relative;
+	cursor: default;
+	z-index: 500;
+	width:1198px;
+}
+
+/* Menu List */
+.nav > li {
+	display: block;
+	float: left;
+}
+
+/* Menu Links */
+.nav > li > a {
+	position: relative;
+	display: block;
+	z-index: 510;
+	height: 40px;
+	padding: 0 20px;
+	line-height: 40px;
+	
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #fcfcfc;
+	
+
+	//background:rgba(51, 153, 255, 0.97) none repeat scroll 0 0 !important;
+	border-left: 0px solid #4b4441;
+	border-right: 0px solid #312a27;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.nav > li:hover > a { background:#fff; color:gray; }
+
+.nav > li:first-child > a {
+	border-radius: 0px 0 0 0px;
+	border-left: none;
+}
+
+/* Search Form */
+.nav > li.nav-search > form {
+	position: relative;
+	width: inherit;
+	height: 40px;
+	
+	z-index: 510;
+	border-left: 1px solid #4b4441;
+}
+
+.nav > li.nav-search input[type="text"] {
+	display: block;
+	float: left;
+	width: 1px;
+	height: 40px;
+	padding: 15px 0;
+	
+	line-height: 10px;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #999999;
+	text-shadow: 0 0 1px rgba(0,0,0,.35);
+
+	background: #372f2b;
+
+	-webkit-transition: all .3s ease 1s;
+	-moz-transition: all .3s ease 1s;
+	-o-transition: all .3s ease 1s;
+	-ms-transition: all .3s ease 1s;
+	transition: all .3s ease 1s;
+}
+
+.nav > li.nav-search input[type="text"]:focus { color: #fcfcfc; }
+
+.nav > li.nav-search input[type="text"]:focus,
+.nav > li.nav-search:hover input[type="text"] {
+	width: 140px;
+	padding: 15px 20px;
+
+	-webkit-transition: all .3s ease .1s;
+	-moz-transition: all .3s ease .1s;
+	-o-transition: all .3s ease .1s;
+	-ms-transition: all .3s ease .1s;
+	transition: all .3s ease .1s;
+}
+
+.nav > li.nav-search input[type="submit"] {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 40px;
+	padding: 0 25px;
+	cursor: pointer;
+
+	background: black url(../../upload/search.png) no-repeat center center;
+
+	border-radius: 0 0px 0px 0;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.nav > li.nav-search input[type="submit"]:hover { background-color:black; }
+
+/* Menu Dropdown */
+.nav > li > div {
+	position: absolute;
+	display: block;
+	width: 1200px;
+	left: 0;
+
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	
+-webkit-box-shadow: 0px 15px 25px -9px rgba(181,177,181,1);
+-moz-box-shadow: 0px 15px 25px -9px rgba(181,177,181,1);
+box-shadow: 0px 15px 25px -9px rgba(181,177,181,1);
+
+	background:#FFF;
+	border-radius: 0 0 3px 3px;
+	border-bottom:0px solid;
+	border-left:0px solid;
+	border-right:0px solid;
+	border-color:#0066ff !important;
+	-webkit-transition: all .3s ease .15s;
+	-moz-transition: all .3s ease .15s;
+	-o-transition: all .3s ease .15s;
+	-ms-transition: all .3s ease .15s;
+	transition: all .3s ease .15s;
+}
+
+.nav > li:hover > div {
+	opacity: 1;
+	visibility: visible;
+	overflow: visible;
+	
+}
+
+/* Menu Content Styles */
+.nav .nav-column {
+	float: left;
+	width: 28%;
+	padding: 2%;
+
+}
+
+.nav .nav-column h3 {
+	padding-left:10px;
+	margin: 20px 0 10px 0;
+	line-height: 25px;
+	background-color:#428bca;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	
+}
+
+.nav .nav-column ul:hover {
+	background-color:;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+
+
+.nav .nav-column h3.orange { color: #ff722b; }
+
+.nav .nav-column li a {
+	display: block;
+	line-height: 26px;
+	padding-left:10px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #888888;
+}
+
+.nav .nav-column li a:hover { color: #666666; background-color:#FAFAEA; }
