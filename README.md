@@ -3,8 +3,8 @@ Student Information Management System
 
 ADMIN LOGIN
 USERNAME - dhakad
-password - 9998
+PASSWORD - 9998
 
 FACULTY LOGIN
 USERNAME - shiva
-password - 0009
+PASSWORD - 0009
